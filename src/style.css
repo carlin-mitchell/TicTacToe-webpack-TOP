@@ -93,6 +93,7 @@ body {
   aspect-ratio: 1;
   background-color: sandybrown;
   border-radius: var(--med-br);
+  border: 4px solid var(--burnt-sienna);
   cursor: pointer;
 }
 
