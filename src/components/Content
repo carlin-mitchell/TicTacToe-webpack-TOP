@@ -1,7 +1,21 @@
+import StartButton from "./StartButton";
+
+const placeholder = () => {
+  const placeholder = Object.assign(document.createElement("div"), {
+    className: "placeholder",
+  });
+  return placeholder;
+};
+
 const Content = () => {
   const content = Object.assign(document.createElement("div"), {
     className: "content",
   });
+
+  content.appendChild(StartButton());
+  content.appendChild(placeholder());
+  content.appendChild(placeholder());
+
   return content;
 };
 

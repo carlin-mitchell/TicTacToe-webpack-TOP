@@ -17,6 +17,7 @@
 
   --small-br: 5px;
   --med-br: 10px;
+  --def-padding: 25px;
 }
 
 * {
@@ -39,7 +40,12 @@ body {
 .content {
   background-color: var(--persian-green);
   display: grid;
-  grid-template-rows: max-content max-content auto;
+  grid-template-rows: max-content auto auto;
+  padding: var(--def-padding);
+}
+
+.start-button {
+  background-color: var(--burnt-sienna);
 }
 
 footer {
@@ -78,4 +84,21 @@ footer .top-link {
 
 footer .top-link:visited {
   color: var(--burnt-sienna);
+}
+
+.placeholder:nth-child(even) {
+  background-color: green;
+}
+
+.placeholder:nth-child(odd) {
+  background-color: red;
+}
+
+/* ---------------UTILITY CLASSES--------------- */
+.unselectable {
+  user-select: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
