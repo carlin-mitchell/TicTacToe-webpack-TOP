@@ -1,3 +1,8 @@
+@font-face {
+  font-family: VarelaRound;
+  src: url(./global-assets/fonts/VarelaRound-Regular/VarelaRound-Regular.ttf);
+}
+
 :root {
   /* colors */
   --charcoal: #264653ff;
@@ -18,6 +23,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: VarelaRound, sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 100px;
+}
+
+.content {
+  background-color: var(--persian-green);
+  display: grid;
+  grid-template-rows: max-content max-content auto;
 }
 
 footer {
