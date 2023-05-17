@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "test": "test",
-    "watch": "npx webpack"
+    "watch": "npx webpack",
+    "deploy": "git add . && git commit -m 'deploy to github pages' && git push origin main && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
