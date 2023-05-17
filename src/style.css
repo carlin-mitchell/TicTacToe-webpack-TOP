@@ -17,7 +17,7 @@
 
   --small-br: 5px;
   --med-br: 10px;
-  --def-padding: 25px;
+  --def-spacing: 25px;
 }
 
 * {
@@ -29,23 +29,50 @@
 html,
 body {
   height: 100%;
-  font-family: VarelaRound, sans-serif;
 }
 
 body {
   display: grid;
   grid-template-rows: auto 100px;
+  font-family: VarelaRound, sans-serif;
 }
 
 .content {
   background-color: var(--persian-green);
   display: grid;
-  grid-template-rows: max-content auto auto;
-  padding: var(--def-padding);
+  grid-template-rows: max-content max-content auto;
+  padding: var(--def-spacing);
 }
 
 .start-button {
+  padding: var(--def-spacing);
+  margin-bottom: var(--def-spacing);
+  border-radius: 20px;
   background-color: var(--burnt-sienna);
+  font-size: 3rem;
+  color: var(--charcoal);
+  width: min(400px, 100%);
+  text-align: center;
+  justify-self: center;
+  -webkit-box-shadow: 10px 10px 7px -4px var(--charcoal);
+  -moz-box-shadow: 10px 10px 7px -4px var(--charcoal);
+  box-shadow: 10px 10px 7px -4px var(--charcoal);
+  cursor: pointer;
+}
+
+.start-button:hover {
+  scale: 1.03;
+}
+
+.start-button:active {
+  scale: 1;
+}
+
+.game-prompt {
+  text-align: center;
+  color: var(--charcoal);
+  font-size: 1.5rem;
+  margin-bottom: var(--def-spacing);
 }
 
 footer {
