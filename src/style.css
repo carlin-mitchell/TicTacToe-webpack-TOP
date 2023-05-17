@@ -1,0 +1,42 @@
+:root {
+  /* colors */
+  --charcoal: #264653ff;
+  --persian-green: #2a9d8fff;
+  --saffron: #e9c46aff;
+  --sandy-brown: #f4a261ff;
+  --burnt-sienna: #e76f51ff;
+
+  --marginSpace: 0.3rem;
+  --footer-font-size: 1.2rem;
+  --tile-size: 150px;
+
+  --small-br: 5px;
+  --med-br: 10px;
+}
+
+footer img {
+  height: calc(var(--footer-font-size) - 0.2rem);
+  margin-left: var(--marginSpace);
+}
+
+footer img:hover {
+  scale: 1.2;
+}
+
+footer img:active {
+  scale: 1;
+}
+
+footer .top-attribution {
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+footer .top-link {
+  color: var(--burnt-sienna);
+  margin-left: var(--marginSpace);
+}
+
+footer .top-link:visited {
+  color: var(--burnt-sienna);
+}
