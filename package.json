@@ -1,0 +1,27 @@
+{
+  "name": "tictactoe-webpack-top",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "test",
+    "watch": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlin-mitchell/TicTacToe-webpack-TOP.git"
+  },
+  "author": "Carlin Mitchell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlin-mitchell/TicTacToe-webpack-TOP/issues"
+  },
+  "homepage": "https://github.com/carlin-mitchell/TicTacToe-webpack-TOP#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.1",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
