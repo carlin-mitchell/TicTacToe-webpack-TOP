@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "watch": "webpack --watch",
-    "deploy": "npm run build && git add . && git commit -m 'deploy to github pages' && git push origin main && git subtree push --prefix dist origin gh-pages",
+    "deploy-demo": "npm run build && git add . && git commit -m 'deploy to github pages' && git push origin main && git subtree push --prefix dist origin gh-pages",
     "build": "webpack"
   },
   "repository": {
