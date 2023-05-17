@@ -48,7 +48,7 @@ body {
   padding: var(--def-spacing);
   margin-bottom: var(--def-spacing);
   border-radius: 20px;
-  background-color: var(--burnt-sienna);
+  background-color: red;
   font-size: 3rem;
   color: var(--charcoal);
   width: min(400px, 100%);
