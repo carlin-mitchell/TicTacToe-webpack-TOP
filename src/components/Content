@@ -1,5 +1,6 @@
 import StartButton from "./StartButton";
 import GamePrompt from "./GamePrompt";
+import GameBoard from "./GameBoard";
 
 const placeholder = () => {
   const placeholder = Object.assign(document.createElement("div"), {
@@ -15,7 +16,7 @@ const Content = () => {
 
   content.appendChild(StartButton());
   content.appendChild(GamePrompt());
-  content.appendChild(placeholder());
+  content.appendChild(GameBoard());
 
   return content;
 };

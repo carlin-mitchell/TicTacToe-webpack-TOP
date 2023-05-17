@@ -40,7 +40,7 @@ body {
 .content {
   background-color: var(--persian-green);
   display: grid;
-  grid-template-rows: max-content max-content auto;
+  grid-template-rows: max-content max-content 1fr;
   padding: var(--def-spacing);
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .start-button:hover {
-  scale: 1.03;
+  scale: 1.05;
 }
 
 .start-button:active {
@@ -73,6 +73,50 @@ body {
   color: var(--charcoal);
   font-size: 1.5rem;
   margin-bottom: var(--def-spacing);
+}
+
+.game-board {
+  justify-self: center;
+  align-self: center;
+  height: min(500px, 100%);
+  aspect-ratio: 1;
+  padding: 20px;
+  background-color: var(--saffron);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border-radius: var(--med-br);
+  gap: 1.2rem;
+}
+
+.game-tile {
+  aspect-ratio: 1;
+  background-color: sandybrown;
+  border-radius: var(--med-br);
+  cursor: pointer;
+}
+
+.game-tile:hover {
+  scale: 1.05;
+}
+.game-tile:active {
+  scale: 1;
+}
+
+.O {
+  background-image: url("./global-assets/images/O-charcoal.png");
+}
+
+.X {
+  background-image: url("./global-assets/images/X-charcoal.png");
+}
+
+.O,
+.X {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  padding: 10px;
 }
 
 footer {
