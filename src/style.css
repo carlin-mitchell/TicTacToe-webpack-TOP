@@ -39,6 +39,7 @@ body {
 }
 
 .content {
+  width: 100%;
   background-color: var(--persian-green);
   display: grid;
   grid-template-rows: max-content max-content 1fr;
@@ -52,7 +53,7 @@ body {
   background-color: var(--burnt-sienna);
   font-size: 3rem;
   color: var(--charcoal);
-  max-width: min(400px, 100%);
+  max-width: 100%;
   text-align: center;
   justify-self: center;
   -webkit-box-shadow: 10px 10px 7px -4px var(--charcoal);
