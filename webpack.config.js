@@ -13,6 +13,9 @@ module.exports = {
       title: "Tic Tac Toe",
     }),
   ],
+  devServer: {
+    static: "./dist",
+  },
   module: {
     rules: [
       {

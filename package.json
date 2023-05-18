@@ -7,7 +7,8 @@
     "test": "test",
     "watch": "webpack --watch",
     "deploy-demo": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
-    "build": "webpack"
+    "build": "webpack",
+    "serve": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "webpack": "^5.82.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   }
 }
