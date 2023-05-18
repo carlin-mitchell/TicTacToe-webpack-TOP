@@ -179,7 +179,7 @@ footer .top-link:visited {
   visibility: hidden;
 }
 
-/* --------------- Media Query --------------- */
+/* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width: 400px) {
   .start-button {
     font-size: 2rem;
@@ -189,5 +189,8 @@ footer .top-link:visited {
   }
   .game-tile:hover {
     scale: 1;
+  }
+  .game-board {
+    height: 100%;
   }
 }
