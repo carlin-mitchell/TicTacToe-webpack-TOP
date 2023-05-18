@@ -178,3 +178,10 @@ footer .top-link:visited {
 .hidden {
   visibility: hidden;
 }
+
+/* --------------- Media Query --------------- */
+@media only screen and (max-width: px) {
+  .start-button {
+    font-size: 2rem;
+  }
+}
