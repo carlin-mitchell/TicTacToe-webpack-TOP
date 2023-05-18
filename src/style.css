@@ -76,16 +76,17 @@ body {
 }
 
 .game-board {
-  justify-self: center;
-  align-self: center;
-  height: min(500px, 100%);
+  height: min(95vw, 100%);
   aspect-ratio: 1;
+  border-radius: var(--med-br);
   padding: 20px;
   background-color: var(--saffron);
+
+  justify-self: center;
+  align-self: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  border-radius: var(--med-br);
   gap: 1.2rem;
 }
 
