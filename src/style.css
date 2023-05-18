@@ -52,7 +52,7 @@ body {
   background-color: var(--burnt-sienna);
   font-size: 3rem;
   color: var(--charcoal);
-  width: min(25rem, 100%);
+  max-width: min(400px, 100%);
   text-align: center;
   justify-self: center;
   -webkit-box-shadow: 10px 10px 7px -4px var(--charcoal);
