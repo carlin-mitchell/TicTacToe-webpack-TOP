@@ -36,7 +36,6 @@ body {
   display: grid;
   grid-template-rows: auto 100px;
   font-family: VarelaRound, sans-serif;
-  overflow-y: scroll;
 }
 
 .content {
@@ -45,6 +44,7 @@ body {
   display: grid;
   grid-template-rows: max-content max-content 1fr;
   padding: var(--def-spacing);
+  overflow-y: scroll;
 }
 
 .start-button {
