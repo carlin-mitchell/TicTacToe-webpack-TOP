@@ -29,6 +29,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -51,7 +52,7 @@ body {
   background-color: var(--burnt-sienna);
   font-size: 3rem;
   color: var(--charcoal);
-  width: min(400px, 100%);
+  width: min(400px, 95%);
   text-align: center;
   justify-self: center;
   -webkit-box-shadow: 10px 10px 7px -4px var(--charcoal);
