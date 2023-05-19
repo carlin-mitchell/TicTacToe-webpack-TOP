@@ -11,7 +11,7 @@ const StartButton = () => {
       }
     },
     onmouseout: function () {
-      if (game.getGameIsRunning()) {
+      if (!game.getGameIsRunning()) {
         this.innerText = startingText;
       }
     },
