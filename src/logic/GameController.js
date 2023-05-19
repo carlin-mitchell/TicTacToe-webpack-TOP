@@ -25,6 +25,8 @@ const GameController = (() => {
   };
 
   const playRound = () => {
+    resetGameBoard();
+    screen.resetGameTiles();
     gameIsRunning = true;
     screen.updateGamePrompt(`It's ${activePlayer.name}'s turn`);
   };
@@ -50,8 +52,6 @@ const GameController = (() => {
     } else {
       screen.updateGamePrompt(`It's a draw! Press the button to play again!`);
     }
-    resetGameBoard();
-    console.log(gameBoard);
   };
 
   const checkForWin = () => {

@@ -28,7 +28,12 @@ const ScreenController = (() => {
     tile.classList.add(marker);
   };
 
-  const resetGameTiles = () => {};
+  const resetGameTiles = () => {
+    const gameTiles = document.querySelectorAll(".game-tile");
+    gameTiles.forEach((tile) => {
+      tile.className = "game-tile";
+    });
+  };
 
   const updateGamePrompt = (string) => {
     console.log(string);
@@ -36,7 +41,7 @@ const ScreenController = (() => {
     prompt.innerText = string;
   };
 
-  return { setInitialView, updateGamePrompt, updateGameTile };
+  return { setInitialView, updateGamePrompt, updateGameTile, resetGameTiles };
 })();
 
 export default ScreenController;
