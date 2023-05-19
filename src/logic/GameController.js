@@ -30,7 +30,7 @@ const GameController = (() => {
   };
 
   const placeMarker = (index) => {
-    if (gameIsRunning) {
+    if (gameIsRunning && gameBoard[index] === "") {
       updateGameBoard(index);
       screen.updateGameTile(index, activePlayer.marker);
       toggleActivePlayer();

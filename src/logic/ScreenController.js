@@ -24,7 +24,6 @@ const ScreenController = (() => {
   };
 
   const updateGameTile = (index, marker) => {
-    console.log(index, marker);
     const tile = document.querySelector("#game-tile-" + index);
     tile.classList.add(marker);
   };
