@@ -28,7 +28,10 @@ const ScreenController = (() => {
     tile.classList.add(marker);
   };
 
+  const resetGameTiles = () => {};
+
   const updateGamePrompt = (string) => {
+    console.log(string);
     const prompt = document.querySelector(".game-prompt");
     prompt.innerText = string;
   };
