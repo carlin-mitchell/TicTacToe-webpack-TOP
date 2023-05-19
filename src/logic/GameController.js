@@ -6,6 +6,7 @@ const GameController = (() => {
   const getGameBoard = () => gameBoard;
   const updateGameBoard = (index) => {
     gameBoard[index] = activePlayer.marker;
+    console.log(gameBoard);
   };
   const resetGameBoard = () => {
     gameBoard = gameBoard.map((e) => "");
