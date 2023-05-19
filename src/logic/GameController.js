@@ -15,20 +15,23 @@ const GameController = (() => {
   let gameIsRunning = false;
   const getGameIsRunning = () => gameIsRunning;
 
-  const player1 = Player("Player 1", "X");
-  const player2 = Player("Player 2", "O");
+  const player1 = Player("X", "X");
+  const player2 = Player("O", "O");
   let activePlayer = player1;
-  const getActivePlayer = () => activePlayer;
   const toggleActivePlayer = () => {
     activePlayer = activePlayer === player1 ? player2 : player1;
     screen.updateGamePrompt(`It's ${activePlayer.name}'s turn`);
   };
 
   const playRound = () => {
-    resetGameBoard();
-    screen.resetGameTiles();
-    gameIsRunning = true;
-    screen.updateGamePrompt(`It's ${activePlayer.name}'s turn`);
+    if (!gameIsRunning) {
+      screen.disableStartButton();
+      activePlayer = player1;
+      resetGameBoard();
+      screen.resetGameTiles();
+      gameIsRunning = true;
+      screen.updateGamePrompt(`It's ${activePlayer.name}'s turn`);
+    }
   };
 
   const placeMarker = (index) => {
@@ -52,6 +55,8 @@ const GameController = (() => {
     } else {
       screen.updateGamePrompt(`It's a draw! Press the button to play again!`);
     }
+    screen.updateStartButtonText("Tic Tac Toe");
+    screen.enableStartButton();
   };
 
   const checkForWin = () => {

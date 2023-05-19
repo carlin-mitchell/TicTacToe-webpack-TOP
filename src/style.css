@@ -179,6 +179,10 @@ footer .top-link:visited {
   visibility: hidden;
 }
 
+.disabled:hover {
+  scale: 1;
+}
+
 /* --------------- MEDIA QUERY --------------- */
 @media only screen and (max-width: 400px) {
   .start-button {

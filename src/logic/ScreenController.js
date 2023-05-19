@@ -23,6 +23,21 @@ const ScreenController = (() => {
     });
   };
 
+  const updateStartButtonText = (string) => {
+    const button = document.querySelector(".start-button");
+    button.innerText = string;
+  };
+
+  const disableStartButton = () => {
+    const button = document.querySelector(".start-button");
+    button.classList.add("disabled");
+  };
+
+  const enableStartButton = () => {
+    const button = document.querySelector(".start-button");
+    button.classList.remove("disabled");
+  };
+
   const updateGameTile = (index, marker) => {
     const tile = document.querySelector("#game-tile-" + index);
     tile.classList.add(marker);
@@ -41,7 +56,15 @@ const ScreenController = (() => {
     prompt.innerText = string;
   };
 
-  return { setInitialView, updateGamePrompt, updateGameTile, resetGameTiles };
+  return {
+    setInitialView,
+    updateGamePrompt,
+    updateGameTile,
+    resetGameTiles,
+    updateStartButtonText,
+    disableStartButton,
+    enableStartButton,
+  };
 })();
 
 export default ScreenController;
